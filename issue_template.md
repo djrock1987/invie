@@ -5,7 +5,7 @@ R// Escriba si puede ser una tarea o un problema a resolver
 R// Escriba aque area del desarrollo pertenece
 
 ## Describir las acciones a realizar 
-
+- [ ] 
 
 ## Fecha de entrega 
 
