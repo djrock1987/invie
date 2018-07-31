@@ -26,7 +26,7 @@
 		<div class="contenedor">
 			<h1 class="titulo">Guitarras invisibles</h1> <!-- titulo -->
 			<h3 class="titulo-a">Sé la estrella de rock que siempre quisiste ser</h3> <!-- resumen -->
-			<button type="">Conoce más</button> <!-- boton -->
+			<button class="button" type="">Conoce más</button> <!-- boton -->
 		</div>
 	</section><!-- /portada -->
 	<section id="guitarras" class="guitarras contenedor"><!-- guitarras -->
@@ -55,6 +55,46 @@
 		 </article> 
 		 
 	</section><!-- /guitarras  -->
+
+	<footer class="footer"> <!-- footer -->
+		<div class="contenedor">
+			
+			<div class="contacto">
+				<img src="images/invie-white.png" alt="logo white de invie" >
+				<a href="tel:+573134810756" title=""><strong>Telefono: </strong>3134810756</a>
+				<a href="mailto:programadordj@gmail.com?subject=Mensaje desde invie" "email me"><strong>E-mail: </strong>Contacto@invie.com</a>
+			</div>
+			<form class="formulario">
+				<div class="col1">
+					<label for="nombre"> Nombre </label>
+						<input type="text" name="nombre" value="" id="nombre" placeholder="">
+					<label for="email">E-mail </label> <input type="email" id="email" name="email" value="" required="">
+					<div class="sexo">
+						<label for="mujer">
+							<input type="radio" name="sexo" checked id="mujer" value="mujer">Mujer
+						</label>
+						<label for="hombre">
+							<input type="radio" name="sexo" id="hombre" value="hombre">Hombre
+						</label>
+					</div>
+					<div class="intereses">
+						<label for="cotizacion"><input type="checkbox" name="intereses" id="cotizacion" checked value="cotizacion">Cotización</label>
+					
+						<label for="reclamo"><input type="checkbox" name="intereses" id="reclamo" value="reclamo">Reclamo</label>
+					
+						<label for="comentarios"><input type="checkbox" name="intereses" id="comentarios" value="comentarios">Comentarios</label>
+					
+						<label for="otros"><input type="checkbox" name="intereses" id="otros" value="otros">Otros</label>
+					</div>
+				</div>
+				<div class="col2">
+					<label for="comentarios">Comentarios
+					<textarea name="comentarios" id="comentarios" value="" cols="30" rows="10"></textarea></label>
+					<input class="button" type="submit" name="" value="Enviar">
+				</div>
+			</form>
+		</div>
+	</footer> <!-- footer -->
 	
 </body>
 </html>

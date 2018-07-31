@@ -3,12 +3,12 @@ body{
 	margin: 0;
 }
 
-button{
+.button{
 	border-radius: 5px;
 	border: none;
 	color: #ffffff;
 	background: #FD324E;
-	padding: 7px;
+	padding: 10px;
 }
 
 .titulo{
@@ -85,12 +85,58 @@ button{
 .header{
 	position: relative;
 }
+.footer{
+	background:#273B47;
+	color: #FFFFFF;
+}
+.contacto{
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.contacto img{
+	display: block;
+}
+.contacto strong{
+	display: block;
+}
+.contacto a{
+	text-decoration: none;
+	color: #FFFFFF;
+	margin: 10px 10px 10px 0;
+}
+.footer .contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+.formulario{
+	display: flex;
+	width: 400px;
+	padding: 50px 10px;
+}
+.formulario label, .sexo, .intereses {
+	margin-bottom: 15px;
+}
+.col1, .col2{
+	display: flex;
+	flex-direction: column;
 
+}
+.col1{
+	margin-right: 15px;
+}
+.col2{
+	align-items: flex-start;
+}
 
+.intereses label{
+	font-size: 13px;
+}
 
-
-
-
+.sexo{
+	margin-top: 10px;
+}
 
 
 
