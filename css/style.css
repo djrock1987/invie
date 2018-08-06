@@ -2,11 +2,65 @@ body{
 	font-family: 'Allerta', sans-serif;
 	margin: 0;
 }
+table{
+	width: 100%;
+}
+th{
+	background: #273b47;
+	color: #ffffff;
+	text-align: left;
+	padding: 10px 20px;
+
+}
+td{
+	padding: 20px
+}
+table, th, td {
+	border:1px solid #273b47;
+	border-collapse: collapse;
+}
+
+input, textarea{
+	outline: 0;
+}
+input:focus, textarea:focus{
+	background: lightgray;
+}
+.contenedor{
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+.background{
+    background-image: url(../images/background.png);
+	background-size: cover;
+}
+
+.button{
+	border-radius: 12px;
+	border: none;
+	color: #ffffff;
+	padding: 10px 12px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 18px;
+	/*background: #FD324E;
+	background: linear-gradient(to left, #FE344E, #FF7250)*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,ff7250+0,fe344e+100 */
+	background: rgb(135,224,253); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(135,224,253,1) 0%, rgba(255,114,80,1) 0%, rgba(254,52,78,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(135,224,253,1) 0%,rgba(255,114,80,1) 0%,rgba(254,52,78,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(135,224,253,1) 0%,rgba(255,114,80,1) 0%,rgba(254,52,78,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#fe344e',GradientType=1 ); /* IE6-9 */
+}
 
 .titulo{
 	font-size: 70px;
     font-family: 'Montserrat', sans-serif;
     margin: 70px 0 0 0;
+}
+.titulo span{
+	text-decoration: underline;
 }
 .titulo-a{
 	font-size: 24px;
@@ -22,20 +76,22 @@ body{
 }
 .guitarras{
 	color:#1F313C;
+	margin-bottom: 60px ;
 }
 .guitarra{
-	margin: 10px;
+	margin: 10px 10px 40px 10px;
 	padding: 10px;
 	/*overflow: hidden;*/
 	border: 2px solid #1F313F;
+	border-radius: 8px;
 }
 .guitarra ol{
 	padding: 0;	
 }
 .portada{
-	background-image: url(../images/background.png);
 	color: #FFFFFF;
 	padding: 20px;
+	height: 500px;
 }
 .portada button{
 	margin-bottom: 70px;
@@ -50,12 +106,19 @@ body{
 	display: inline-block;
 	margin-left: 30px;
 }
-.logotipo{
-	display: inline-block;	
+.menu li:before{
+	content: 'º ';
+	font-size: 20px;
+	line-height: 20px;	
+	color: #FFFFFF;
 }
-.contenedor{
-	width: 800px;
-	margin: auto;
+.menu a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.logotipo{
+	display: inline-block;
+	margin-left: 0px;	
 }
 .right{
 	float: right;
@@ -65,23 +128,80 @@ body{
 .left{
 	float: left;
 	position: relative;
-	top: 80px;
+
 }
 .contenedor-guitarra-a{
 	padding-left: 20px;
 }
 .contenedor-guitarra-b{
 	margin-left: 370px;
+	position: relative;
+	bottom: 90px;
+
+}
+.guitarra.b{
+	height: 190px;
 }
 .header{
 	position: relative;
 }
+.footer{
+	background:#273B47;
+	color: #FFFFFF;
+	padding: 50px 10px;
+}
+.contacto{
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.contacto img{
+	display: block;
+}
+.contacto strong{
+	display: block;
+}
+.contacto a{
+	text-decoration: none;
+	color: #FFFFFF;
+	margin: 10px 10px 10px 0;
+}
+.footer .contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+.formulario{
+	display: flex;
+	width: 400px;
+}
+.formulario label, .sexo, .intereses {
+	margin-bottom: 15px;
+}
+.col1, .col2{
+	display: flex;
+	flex-direction: column;
 
+}
+.col1{
+	margin-right: 15px;
+}
+.col2{
+	align-items: flex-start;
+}
 
+.intereses label{
+	font-size: 13px;
+}
 
+.sexo{
+	margin-top: 10px;
+}
 
+/*********** pagina precios ***********/
 
-
-
+.tabla{
+	margin: 50px 0;
+}
 
 
